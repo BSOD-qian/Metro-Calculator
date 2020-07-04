@@ -9,26 +9,34 @@
     <script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
 </head>
 
-<body class="mdui-appbar-with-toolbar">
+<body class="mdui-appbar-with-toolbar  mdui-theme-primary-blue mdui-theme-accent-teal">
     <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide">
-        <div class="mdui-toolbar mdui-color-indigo">
+        <div class="mdui-toolbar mdui-color-theme-200">
             <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
-            <a href="javascript:;" class="mdui-typo-headline">地铁计算器<sup>lite</sup></a>
-            <a href="javascript:;" class="mdui-typo-title">Alpha</a>
+            <a href="javascript:;" class="mdui-typo-headline">地铁计算器<sup>web</sup></a>
+            <a href="javascript:;" class="mdui-typo-title" id="open">Preview - 20H7</a>
             <div class="mdui-toolbar-spacer"></div>
-            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
-            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
-            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
         </div>
     </div>
 
+    <script type="text/javascript">
+var $$ = mdui.JQ;
+
+$$('#open').on('click', function () {
+  mdui.snackbar({
+    message: '地铁计算器web<br/>Ver 20H7<br/>&copy2020 BSOD<br/>感谢贴吧@说过话换个方法和@开心的wangxy的<a href="https://tieba.baidu.com/p/6676405533?pid=132126393760&cid=#132126393760" target="_blank">车体号表</a>'
+  });
+});
+    </script>
     <div class="mdui-textfield mdui-textfield-floating-label">
-        <label class="mdui-textfield-label">即时搜索</label>
+        <label class="mdui-textfield-label">输入车体号</label>
         <input id="mykeyword" class="mdui-textfield-input" type="text" onkeyup="findone()" />
     </div>
 
     <div id=myfind>
-        <div class="mdui-spinner mdui-spinner-colorful"></div>等待输入
+        <div class="mdui-valign">
+            <div class="mdui-spinner"></div>请不要把车厢号当成车体号
+        </div>
     </div>
     <script>
         var myCars = [
@@ -311,6 +319,58 @@
             '16:16013:160371<br/>',
             '16:16013:160383<br/>',
             '16:16013:160391<br/>',
+            '16:16014:160401<br/>',
+            '16:16014:160413<br/>',
+            '16:16014:160421<br/>',
+            '16:16015:160431<br/>',
+            '16:16015:160443<br/>',
+            '16:16015:160451<br/>',
+            '16:16016:160461<br/>',
+            '16:16016:160473<br/>',
+            '16:16016:160481<br/>',
+            '16:16017:160491<br/>',
+            '16:16017:160503<br/>',
+            '16:16017:160511<br/>',
+            '16:16018:160521<br/>',
+            '16:16018:160533<br/>',
+            '16:16018:160541<br/>',
+            '16:16019:160551<br/>',
+            '16:16019:160563<br/>',
+            '16:16019:160571<br/>',
+            '16:16020:160581<br/>',
+            '16:16020:160593<br/>',
+            '16:16020:160601<br/>',
+            '16:16021:160611<br/>',
+            '16:16021:160623<br/>',
+            '16:16021:160631<br/>',
+            '16:16022:160641<br/>',
+            '16:16022:160653<br/>',
+            '16:16022:160661<br/>',
+            '16:16023:160671<br/>',
+            '16:16023:160683<br/>',
+            '16:16023:160691<br/>',
+            '16:16024:160701<br/>',
+            '16:16024:160713<br/>',
+            '16:16024:160721<br/>',
+            '16:16025:160731<br/>',
+            '16:16025:160743<br/>',
+            '16:16025:160751<br/>',
+            '16:16026:160761<br/>',
+            '16:16026:160773<br/>',
+            '16:16026:160781<br/>',
+            '16:16027:160791<br/>',
+            '16:16027:160803<br/>',
+            '16:16027:160811<br/>',
+            '16:16028:160821<br/>',
+            '16:16028:160833<br/>',
+            '16:16028:160841<br/>',
+            '16:16029:160851<br/>',
+            '16:16029:160863<br/>',
+            '16:16029:160871<br/>',
+            '16:16030:160881<br/>',
+            '16:16030:160893<br/>',
+            '16:16030:160901<br/>',
+            '16:16031:160911<br/>',
         ];
         function findone() {
             mykey = document.getElementById("mykeyword").value;
@@ -322,7 +382,7 @@
             document.getElementById("myfind").innerHTML = myfind;
         }
     </script>
-    <p>请不要把车厢号当成车体号！</p>
+
 </body>
 
 </html>
