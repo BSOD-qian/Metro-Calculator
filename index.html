@@ -13,40 +13,6 @@
 </head>
 
 <body class="mdui-appbar-with-toolbar  mdui-theme-primary-orange mdui-theme-accent-teal">
-    <script type="text/javascript">
-        window.onload = function detectOS() {
-            var userAgent = navigator.userAgent;
-            var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");
-            var isMac = (navigator.platform == "Mac68K") || (navigator.platform == "MacPPC") || (navigator.platform == "Macintosh") || (navigator.platform == "MacIntel");
-            if (isMac) return "Mac";
-            var isUnix = (navigator.platform == "X11") && !isWin && !isMac;
-            if (isUnix) return "Unix";
-            var isLinux = (String(navigator.platform).indexOf("Linux") > -1);
-            if (isLinux) return "Linux";
-            if (isWin) {
-                var isWin2K = userAgent.indexOf("Windows NT 5.0") > -1 || userAgent.indexOf("Windows 2000") > -1;
-                if (isWin2K) document.getElementById("check").innerHTML = "您使用了不支持的操作系统，请升级至Windows 8.1或Windows 10。";
-                var isWinXP = userAgent.indexOf("Windows NT 5.1") > -1 || userAgent.indexOf("Windows XP") > -1;
-                if (isWinXP) document.getElementById("check").innerHTML = "您使用了不支持的操作系统，请升级至Windows 8.1或Windows 10。";
-                var isWin2003 = userAgent.indexOf("Windows NT 5.2") > -1 || userAgent.indexOf("Windows 2003") > -1;
-                if (isWin2003) document.getElementById("check").innerHTML = "您使用了不支持的操作系统，请升级至Windows 8.1或Windows 10。";
-                var isWinVista = userAgent.indexOf("Windows NT 6.0") > -1 || userAgent.indexOf("Windows Vista") > -1;
-                if (isWinVista) document.getElementById("check").innerHTML = "您使用了不支持的操作系统，请升级至Windows 8.1或Windows 10。";
-                var isWin7 = userAgent.indexOf("Windows NT 6.1") > -1 || userAgent.indexOf("Windows 7") > -1;
-                if (isWin7) document.getElementById("w7").innerHTML = "微软对于Windows 7的支持已于2020年1月14日结束，请尽快升级至Windows 8.1或Windows 10。地铁计算器Web对于Windows 7的支持将于2021年1月14日结束。";
-                var isWin8 = userAgent.indexOf("Windows NT 6.2") > -1 || userAgent.indexOf("Windows 8") > -1;
-                if (isWin8) document.getElementById("check").innerHTML = "您使用了不支持的操作系统，请升级至Windows 8.1或Windows 10。";
-                var isWin8_1 = userAgent.indexOf("Windows NT 6.3") > -1 || userAgent.indexOf("Windows 8.1") > -1;
-                if (isWin8_1) console.log("Windows 8.1");
-                var isWin10 = userAgent.indexOf("Windows NT 6.4") > -1 || userAgent.indexOf("Windows 10") > -1;
-                if (isWin10) console.log("Windows 10");
-                var isWin10 = userAgent.indexOf("Windows NT 10.0") > -1 || userAgent.indexOf("Windows 10") > -1;
-                if (isWin10) console.log("Windows 10");
-            }
-            return "other";
-        }        
-    </script>
-    <div id="check">
         <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide">
             <div class="mdui-toolbar mdui-color-theme">
                 <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
@@ -99,7 +65,7 @@
     </div>
     <div class="mdui-dialog" id="log">
         <div class="mdui-dialog-title">7.14</div>
-        <div class="mdui-dialog-content">1.新增12001~12010的支持<br/>2.第三届进口博览会宣传片上线。Shanghai,let's meet!</div>
+        <div class="mdui-dialog-content">1.新增12011~12030的支持<br/>2.去除系统限制</div>
         <div class="mdui-dialog-actions">
         <button class="mdui-btn mdui-ripple" mdui-dialog-close>好</button>
         </div>
@@ -448,7 +414,6 @@
         <div class="mdui-dialog-actions">
             <button class="mdui-btn mdui-ripple" mdui-dialog-close>好</button>
         </div>
-    </div>
 </div>
 </body>
 
