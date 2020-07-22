@@ -3,10 +3,10 @@
     "short_name": "地铁计算器",
     "display": "standalone",
     "icons": [
-        {  "src": "/512.png", "type": "image/png", "sizes": "512x512"  },
-        {  "src": "/256.png", "type": "image/png", "sizes": "256x256"  },
-        {  "src": "/128.png", "type": "image/png", "sizes": "128x128"  },
-        {  "src": "/_64.png", "type": "image/png", "sizes": "64x64"  }
+        {  "src": "./512.png", "type": "image/png", "sizes": "512x512"  },
+        {  "src": "./256.png", "type": "image/png", "sizes": "256x256"  },
+        {  "src": "./128.png", "type": "image/png", "sizes": "128x128"  },
+        {  "src": "./_64.png", "type": "image/png", "sizes": "64x64"  }
     ],
     "start_url": "/",
     "background_color":"#ADD8E6",
