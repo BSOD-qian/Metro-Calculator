@@ -8,7 +8,7 @@
         {  "src": "https://bsod-qian.github.io/Metro-Calculator/128.png", "type": "image/png", "sizes": "128x128"  },
         {  "src": "https://bsod-qian.github.io/Metro-Calculator/_64.png", "type": "image/png", "sizes": "64x64"  }
     ],
-    "start_url": "https://bsod-qian.github.io/Metro-Calculator/",
+    "start_url": "./Metro-Calculator",
     "background_color":"#ADD8E6",
     "theme_color": "#DC143C"
 }
