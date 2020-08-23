@@ -1,5 +1,6 @@
 var myCars = [
-    '浦东机场捷运系统<br/>JY0101<br/>JY010011<br/>特殊性：首列交付<hr/>',
+    '线路：1号线<br/>车型：01A01（老老八）<br/>车号：01001<br/>车体号：92011<br/>上线日期：2009<br/>特殊性：张江实训专用车<hr/>',
+    '线路：1号线<br/>车型：01A01（老老八）<br/>车号：01001<br/>车体号：92022<br/>上线日期：2009<br/>特殊性：张江实训专用车<hr/>',
 function findone() {
     mykey = document.getElementById("mykeyword").value;
     myfind = document.getElementById("myfind").value;
